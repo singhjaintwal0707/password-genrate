@@ -1,0 +1,250 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap'); */
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'urbanist', sans-sarif;
+}
+:root{
+    --var-primary-color:#2888E8FF;
+}
+html{
+    font-size: 62.5%;
+}
+h1,h2,h3,h4{
+    font-family: 'Lexend Deca', sans-sarif;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.6rem;
+}
+button,input[type="submit"]{
+    border:1rem solid #fff;
+    outline: none;
+    padding: .6rem 1.2rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05;
+background-color: transparent;
+cursor: pointer;
+color:#fff;
+
+}
+
+/* now my registertraition pGWE STYLE */
+
+.Register-header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url("images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    height:10vh;
+    width:80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+
+}
+.logo a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:#fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap:2rem;
+font-size: 1.7rem;
+font-weight: 600;
+}
+li>a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/* home pGE style
+ registraiton pag */
+
+ main{
+    min-height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .grid-two--column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .registration,.login{
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: aquamarine;
+ }
+ .form-text{
+    height:inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url("images.jpeg");
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: center;
+color:#fff;
+padding: 3rem 2rem;
+}
+ .form-text p{
+    width:30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+ }
+ .form-text button{
+    background-color: #fff;
+    color:#000;
+
+ }
+.form-text button:hover{
+    background-color: transparent;
+    color:#fff;
+}
+.registraion-form, .login-form{
+    width:100%;
+    min-height: 45vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+.registraion-form p, .login-form p{
+    margin: 1rem 0 .7rem 0;
+
+}
+.social-icons{
+    display: flex;
+    gap: 3rem;
+    margin: 1rem 0 .6rem 0;
+}
+i.fa-brands{
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+input{
+    width:20rem;
+    margin: .7rem 0;
+border: none;
+background-color: #e8e8e8;
+padding: 1rem 1.8rem;
+letter-spacing: .06rem;
+}
+input[type="submit"]{
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: var(--var-primary-color);
+    color:#fff;
+}
+
+.login .form-text{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3)),
+    url("jitu.jpeg");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+.registration .form-text{
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3)),
+    url("jy.jpeg");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+}
+.registration:not(.login-section--display){
+    display:none;
+}
+
+
+.login-section--display .registration{
+    display:block;
+    }
+
+
+.login-section--display .login{
+display:none;
+}
+
+
+
+
+
+/* media query ==================== */
+
+@media screen and(max-width:768px) {
+
+
+    .grid-two--column{
+        grid-template-columns: 1fr;
+    }
+.Register-header {
+    flex-direction: column;
+    gap:1rem;
+}
+.container{
+    flex-direction: column;
+    gap:1rem;
+}
+
+.Register-header{
+    padding-top: 2rem;
+}
+.logo{
+    padding-top: 2rem;
+   
+}
+.container{
+    padding-top: 2rem;  
+}
+
+
+.registration .login{
+    min-width: 90vw;
+}
+.login{
+    min-width: 90vw;
+
+}
+.form-text{
+    order:1;
+}
+.registration {
+    order:0;
+}
+.login{
+    order:0;
+
+}
+.form-text{
+width:25ch;
+}
+}
